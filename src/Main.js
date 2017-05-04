@@ -12,6 +12,22 @@ import Greetings from './Greetings';
 import ShadesOfGrey from './ShadesOfGrey';
 import GrindBoard from './GrindBoard';
 import Fa from './Fa';
+import Timer from './Timer';
+import StopWatch from './StopWatch';
+import Search from './Search';
+
+const names = [
+  'Nicholas',
+  'Siobhan',
+  'Cyndi',
+  'Chase',
+  'Amin',
+  'Julius',
+  'Serena',
+  'Nic',
+  'Ahmed',
+  'Trista'
+]
 
 
 function Main (props) {
@@ -23,6 +39,9 @@ function Main (props) {
 
   return (
     <div style={style} className="main">
+      <Search data={names} />
+      <StopWatch/>
+      <Timer/>
       <BlueSquare />
       <HelloWorld name="Jon Snow" />
       <HelloWorld name="Daenerys Targaryan" />
@@ -42,7 +61,7 @@ function Main (props) {
       <Fa kind='weibo' size='5x' color ="Red" spin = {false}/>
       <Fa kind='qq' size='5x' color ="Green" spin={true} />
       <Shape />
-  <Shape colors={['Violet', 'Brown', 'Aquamarine', 'Gainsboro']} />
+      <Shape colors={['Violet', 'Brown', 'Aquamarine', 'Gainsboro']} />
     </div>
   );
 }
