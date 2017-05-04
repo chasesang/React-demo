@@ -8,6 +8,11 @@ import HelloWorld from './HelloWorld';
 import Square, { BlueSquare } from './Square';
 import OrangeRectangle from './OrangeRectangle';
 import Shape from './Shape';
+import Greetings from './Greetings';
+import ShadesOfGrey from './ShadesOfGrey';
+import GrindBoard from './GrindBoard';
+import Fa from './Fa';
+
 
 function Main (props) {
   const style = {
@@ -28,6 +33,16 @@ function Main (props) {
       <Square color="Brown" />
       <Shape color="Red" type="Circle" />
       <Shape color="Blue" type="Square" />
+      <Greetings names={
+        ['Steve Rogers', 'Logan', 'Charles Xavier',
+         'Kitty Pride']
+      }/>
+      <ShadesOfGrey />
+      <GrindBoard isBordered = {true}/>
+      <Fa kind='weibo' size='5x' color ="Red" spin = {false}/>
+      <Fa kind='qq' size='5x' color ="Green" spin={true} />
+      <Shape />
+  <Shape colors={['Violet', 'Brown', 'Aquamarine', 'Gainsboro']} />
     </div>
   );
 }
